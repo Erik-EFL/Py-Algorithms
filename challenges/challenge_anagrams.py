@@ -25,4 +25,9 @@ def merge(left, right, merged):
     return merged
 
 def is_anagram(first_string, second_string):
-    return merge_sort(list(first_string)) == merge_sort(list(second_string))
+    if first_string == "" and second_string == "":
+        return (first_string, second_string, False)
+
+    first_verify = merge_sort(list(first_string.lower()))
+    second_verify = merge_sort(list(second_string.lower()))
+    return (first_verify, second_verify, first_verify == second_verify)
