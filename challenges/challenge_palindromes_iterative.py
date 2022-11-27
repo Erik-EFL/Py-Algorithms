@@ -13,4 +13,3 @@ def is_palindrome_iterative(word):
         right_index -= 1
 
     return True
-
