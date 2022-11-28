@@ -11,4 +11,3 @@ def find_duplicate(nums):
             return num
 
     return False
-
